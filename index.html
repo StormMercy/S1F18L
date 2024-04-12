@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Висельник</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+#resultContainer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#result {
+  font-size: 18px;
+}
+
+.table {
+  display: table;
+  margin: 0 auto; /* Центрируем таблицу */
+}
+
+.row {
+  display: table-row;
+}
+
+.cell {
+  display: table-cell;
+  padding: 5px;
+  border: 1px solid black; /* Добавляем рамку вокруг каждой ячейки */
+}
+#wordPerRowContainer {
+  text-align: center;
+  margin-top: 20px;
+}
+/* Стили для квадратного поля ввода */
+#wordPerRow {
+  width: 40px; /* Увеличили ширину поля для числа */
+  height: 30px;
+  text-align: center;
+  border: 2px solid green;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 0; /* Убрали внутренний отступ */
+}
+
+#wordPerRow:hover {
+  border: 2px solid rgb(255, 0, 0);
+}
+
+#wordPerRow:focus {
+  border-color: red;
+}
+
+
+</style>
+</head>
+<body>
+  <header>
+    <header>
+      <h1>Висельник   <span id="liteText">Lite</span></h1>
+  </header>
+  
+
+  </header>
+
+
+  
+<div class="wrapper">
+  <div class="asd-container">
+    <div class="image-wrapper">
+      <img src="/photo/fff.jpg" width="400" height="400" alt="">
+      <div class="text-container">
+        <a href="https://t.me/Storm_Mercy" target="_blank" class="telegram-link">Телеграм</a>
+        <div class="mirror-text">ДЛЯ ПОЛУЧЕНИЯ ПОЛНОЙ ВЕРСИИ ВИСЕЛЬНИКА(ФРАЗЫ 2+ СЛОВ) И РЕЖИМА СКРЕБЛА ПИСАТЬ В ТГ</div>
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="interactive-container">
+  <div id="wordPerRowContainer">
+    <label for="wordPerRow">Отображение ячеек:</label>
+    <div id="inputWithButtons">
+      <input type="number" id="wordPerRow" min="1" max="20" value="5" oninput="checkWord()">
+      <div id="btnContainer" >
+        <button class="button" onclick="increment()">+</button>
+        <button class="button" onclick="decrement()">-</button>
+      </div>
+    </div>
+  </div>
+ <div id="wordInput">
+ <h2>Выберите количество букв:</h2>
+  <div id="buttonContainer"></div>
+    <div id="letterInputs"></div>
+    <label for="excludeLetters">Неправильные буквы:</label>
+      <input type="text" id="excludeLetters" class="wrongLettersInput" oninput="checkWord()">
+    <button id="submitBtn" onclick="submitClicked()">Ввод</button>
+</div>
+</div>
+
+
+<div class="asd-container">
+  <div class="image-wrapper">
+    <img src="/photo/fff.jpg" class="asd" width="400" height="400" alt="">
+    <div class="text-container">
+      <a href="https://t.me/Storm_Mercy" target="_blank" class="telegram-link">Телеграм</a>
+      <div class="mirror-text">ДЛЯ ПОЛУЧЕНИЯ ПОЛНОЙ ВЕРСИИ ВИСЕЛЬНИКА(ФРАЗЫ 2+ СЛОВ) И РЕЖИМА СКРЕБЛА ПИСАТЬ В ТГ</div>
+    
+    </div>
+  </div>
+</div>
+
+</div>
+
+
+<div id="resultContainer">
+  <div id="result" class="table"></div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,225 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+}
+
+#wordInput {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#wordPerRowContainer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#buttonContainer {
+  text-align: center;
+}
+
+button {
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+  border: none;
+  background-color: #4CAF50;
+  color: rgb(255, 255, 255);
+  border-radius: 0;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+#submitBtn {
+  width: 80px;
+  border-radius: 10px;
+}
+
+.letterInput {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.letterInput label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.letterInput input {
+  width: 40px;
+  height: 40px;
+  margin-right: 5px;
+  text-align: center;
+}
+
+/* Стили для кнопок */
+#btnContainer {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 5px; /* Добавлено для отступа между полем и кнопками */
+}
+
+.button {
+  width: 20px;
+  height: 20px;
+  margin: 0 2px;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button:active {
+  background-color: #ff0000;
+}
+
+/* Стили для квадратного поля ввода */
+.squareInput {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  border: 2px solid green;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+/* Добавленные стили */
+#inputWithButtons {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#notificationContainer {
+  color: red;
+  position: absolute;
+  top: 138px;
+  right: 475px;
+}
+
+/* styles.css */
+
+header {
+  background-color: green;
+  padding: 10px 0;
+
+}
+
+header h1 {
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+#submitBtn {
+  width: 80px;
+  border-radius: 10px;
+  transition: box-shadow 0.3s ease; /* добавляем анимацию для тени */
+}
+
+#submitBtn:active {
+  background-color: red; /* меняем цвет фона при нажатии */
+}
+
+.wrongLettersInput {
+  border: 2px solid rgb(0, 128, 0);
+  border-radius: 5px;
+}
+/* Ваши стили */
+
+
+.interactive-container img {
+  width: 33%;
+  height: auto;
+  margin: 10px;
+}
+
+.mirror-text-container {
+  position: relative;
+}
+
+.mirror-text,
+.mirror-text2 {
+  position: absolute;
+  text-align: center;
+  top: -230px
+}
+
+.mirror-text {
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  top: -230px
+ 
+}
+
+.mirror-text2 {
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgb(0, 0, 0);
+}
+
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.asd-container {
+  width: 21%;
+}
+
+.interactive-container {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 0 0 10px 10px;
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+#liteText {
+  color: black;
+}
+
+
+.image-wrapper {
+  position: relative;
+}
+
+.text-container {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.mirror-text,
+.mirror-text2 {
+  background-color: rgba(255, 255, 255, 0.7); /* прозрачный белый фон */
+  padding: 10px;
+  font-weight: bold; /* Делаем текст более жирным */
+  top: -190px
+}
+
+
+.telegram-link {
+  display: inline-block;
+  margin-top: 10px;
+  background-color: #0088cc; /* Цвет фона кнопки */
+  color: #ffffff; /* Цвет текста кнопки */
+  padding: 8px 15px; /* Отступы внутри кнопки */
+  border-radius: 5px; /* Закругление углов кнопки */
+  text-decoration: none; /* Убираем подчеркивание у ссылки */
+}
+
+.telegram-link:hover {
+  background-color: #005580; /* Изменяем цвет фона при наведении */
+}
