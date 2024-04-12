@@ -243,3 +243,30 @@ header h1 {
   background-color: #677bc4;
 }
 
+
+/* Медиа-запросы для мобильных устройств */
+@media screen and (max-width: 768px) {
+  .wrapper {
+    justify-content: center; /* Центрируем все контейнеры по горизонтали */
+  }
+
+  .asd-container,
+  .interactive-container {
+    width: 100%; /* Ширина контейнеров на всю ширину экрана */
+    text-align: center; /* Центрируем содержимое внутри контейнеров */
+  }
+
+  .interactive-container img {
+    width: 100%; /* Изображения занимают всю доступную ширину */
+    margin: 10px auto; /* Центрируем изображения по горизонтали */
+  }
+
+  .mirror-text,
+  .mirror-text2 {
+    left: 0;
+    right: 0; /* Располагаем текст по центру */
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
