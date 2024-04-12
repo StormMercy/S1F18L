@@ -223,3 +223,23 @@ header h1 {
 .telegram-link:hover {
   background-color: #005580; /* Изменяем цвет фона при наведении */
 }
+
+
+.discord-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #7289da;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.discord-button:hover {
+  background-color: #677bc4;
+}
+
