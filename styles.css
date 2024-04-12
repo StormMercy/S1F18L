@@ -270,3 +270,25 @@ header h1 {
   }
 }
 
+/* Медиа-запросы для мобильных устройств */
+@media screen and (max-width: 768px) {
+  header,
+  .interactive-container {
+    width: 400px; /* Устанавливаем ширину хеддера и интерактивного контейнера на 400px */
+    margin: 0 auto; /* Центрируем по горизонтали */
+    text-align: center; /* Центрируем содержимое внутри контейнеров */
+    justify-content: center; /* Центрируем все контейнеры по горизонтали */
+  }
+}
+
+@media screen and (max-width: 350px) {
+  
+  .interactive-container {
+    width: 400px; /* Устанавливаем ширину хеддера и интерактивного контейнера на 400px */
+    margin: 0 auto; /* Центрируем по горизонтали */
+    text-align: center; /* Центрируем содержимое внутри контейнеров */
+    justify-content: center; /* Центрируем все контейнеры по горизонтали */
+    margin-left: 55px;
+  }
+}
+
